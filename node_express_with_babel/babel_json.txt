@@ -1,0 +1,12 @@
+// production level code when run
+"build": "babel index.js --out-dir prd",
+"start": "npm run build && nodemon index.js",
+"server": "node prd/index.js",
+
+
+// development level code when run
+"start": "babel index.js -w --out-dir prd",
+"dev": "nodemon prd/index.js",
+
+
+
